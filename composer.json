@@ -20,7 +20,7 @@
     "require": {
         "php": ">=7.0.0",
         "typo3/cms": ">=8.6",
-        "fluidtypo3/flux": "~8.1"
+        "fluidtypo3/flux": "~8.0"
 
     },
     "replace": {
