@@ -1,0 +1,29 @@
+{
+    "name": "bdm/bdm_kesearchindexer_flux",
+    "description": "The flux package from FluidTYPO3",
+    "type": "typo3-cms-extension",
+    "homepage": "https://github.com/BenjaminBeck/bdm_kesearchindexer_flux",
+    "license": "GPL-2.0+",
+    "support": {
+        "irc": "irc://irc.freenode.org/fedext"
+    },
+    "autoload": {
+        "psr-4": {
+            "BDM\\BdmKesearchindexerFlux\\": "Classes/"
+        }
+    },
+
+    "suggest": {
+        "fluidtypo3/vhs": "ViewHelper library for Fluid templates.",
+        "fluidtypo3/fluidpages": "Gives the ability to render Page Templates with pure fluid."
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "typo3/cms": ">=8.6",
+        "fluidtypo3/flux": "~8.1"
+
+    },
+    "replace": {
+        "typo3-ter/bdm_kesearchindexer_flux": "self.version"
+    }
+}
