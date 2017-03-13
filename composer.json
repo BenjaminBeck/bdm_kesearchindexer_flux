@@ -1,6 +1,6 @@
 {
     "name": "bdm/bdm_kesearchindexer_flux",
-    "description": "The flux package from FluidTYPO3",
+    "description": "KeSearch indexer for FluidTYPO3",
     "type": "typo3-cms-extension",
     "homepage": "https://github.com/BenjaminBeck/bdm_kesearchindexer_flux",
     "license": "GPL-2.0+",
