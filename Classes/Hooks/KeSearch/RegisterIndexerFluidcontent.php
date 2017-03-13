@@ -49,10 +49,13 @@ class RegisterIndexerFluidcontent {
 	 * @author Benjamin Beck <beck@beckdigitalemedien.de>
 	 */
 	public function customIndexer (&$indexerConfig, &$indexerObject) {
-		$this->objectManager = GeneralUtility::makeInstance( 'TYPO3\CMS\Extbase\Object\ObjectManager' );
-		// $custom_indexer = new \custom_indexer($indexerObject);
-		$indexer = $this->objectManager->get('BDM\BdmKesearchindexerFlux\KeSearchIndexer\TypesFluidcontent', $indexerObject);
-		return $indexer->startIndexing();
+	    if ($indexerConfig['type'] == self::$indexerType) {
+            $this->objectManager = GeneralUtility::makeInstance( 'TYPO3\CMS\Extbase\Object\ObjectManager' );
+            // $custom_indexer = new \custom_indexer($indexerObject);
+            $indexer = $this->objectManager->get('BDM\BdmKesearchindexerFlux\KeSearchIndexer\TypesFluidcontent', $indexerObject);
+            return $indexer->startIndexing();
+        }
+        return '';
 	}
 }
 
