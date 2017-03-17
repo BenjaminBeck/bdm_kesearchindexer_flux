@@ -9,6 +9,10 @@ class Override
 {
     public static function main(){
 
+
+
+
+
         foreach($GLOBALS['TCA']['tx_kesearch_indexerconfig']['columns'] as $key => $column){
             if(isset($column['displayCond'])){
                 $displayCond = $column['displayCond'];
